@@ -4263,7 +4263,14 @@ namespace CNAMT_sim
                     ok_1[0] = i+1;
                 }
             }
-            sw.WriteLine("StageA OK-ONE:" + ok_1[0]);
+            if (ok_1[0] == 0)
+            {
+                sw.WriteLine("StageA OK-ONE: NC");
+                }
+            else
+            {
+                sw.WriteLine("StageA OK-ONE:" + ok_1[0]);
+            }
 
             for (int i = 0; i < 5; i++)
             {
@@ -4272,7 +4279,15 @@ namespace CNAMT_sim
                     ok_1[1] = i + 1;
                 }
             }
-            sw.WriteLine("StageB OK-ONE:" + ok_1[1]);
+            if (ok_1[1] == 0)
+            {
+                sw.WriteLine("StageB OK-ONE: NC");
+            }
+            else
+            {
+                sw.WriteLine("StageB OK-ONE:" + ok_1[1]);
+            }
+
             for (int i = 0; i < 5; i++)
             {
                 if (cnmtresultpress3[cnmtlocationbig, 2, i, 5, 5] != 0)
@@ -4280,7 +4295,15 @@ namespace CNAMT_sim
                     ok_1[2] = i + 1;
                 }
             }
-            sw.WriteLine("StageC OK-ONE:" + ok_1[2]);
+            if (ok_1[2] == 0)
+            {
+                sw.WriteLine("StageC OK-ONE: NC");
+            }
+            else
+            {
+                sw.WriteLine("StageC OK-ONE:" + ok_1[2]);
+            }
+       
 
 
 
