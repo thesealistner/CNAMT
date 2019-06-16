@@ -1,0 +1,22 @@
+再認分數(retained recognition):4
+StageA OK-ONE:0
+StageB OK-ONE:0
+StageC OK-ONE:0
+StageA OK-TWO:0
+StageB OK-TWO:0
+StageC OK-TWO:0
+StageA CC:11
+StageB CC:11
+StageC CC:11
+StageA CL:0
+StageB CS:0
+StageC CQ:0
+過程記錄
+cnmtstage:0
+cnmtstage:1
+cnmtstage:2
+cnmtstage:3
+cnmt_trytime:0
+[1,657], [2,1188], [5,1719], [0,0], [0,0], [0,0],  
+[1,437], [2,922], [5,1453], [0,0], [0,0], [0,0],  
+ 

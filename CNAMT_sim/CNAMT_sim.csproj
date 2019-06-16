@@ -64,6 +64,30 @@
     <Compile Include="Form3_id.Designer.cs">
       <DependentUpon>Form3_id.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form4_pop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4_pop.Designer.cs">
+      <DependentUpon>Form4_pop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5_debugcnat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5_debugcnat.Designer.cs">
+      <DependentUpon>Form5_debugcnat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6_debugcnmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6_debugcnmt.Designer.cs">
+      <DependentUpon>Form6_debugcnmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7_saveload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7_saveload.Designer.cs">
+      <DependentUpon>Form7_saveload.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -75,8 +99,20 @@
     <EmbeddedResource Include="Form3_id.resx">
       <DependentUpon>Form3_id.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form4_pop.resx">
+      <DependentUpon>Form4_pop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5_debugcnat.resx">
+      <DependentUpon>Form5_debugcnat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6_debugcnmt.resx">
+      <DependentUpon>Form6_debugcnmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7_saveload.resx">
+      <DependentUpon>Form7_saveload.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -118,6 +154,243 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\greenlight2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beep-07.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beep-06.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test6down1_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test6down2_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test6up5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test6down3_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test6down4_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test9up5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test9down1_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test9down2_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test9down3_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test9down4_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test9up6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_1\cnmt_1_a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_1\cnmt_1_a2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_1\cnmt_1_b1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_1\cnmt_1_b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_1\cnmt_1_c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_1\cnmt_1_c2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_1\cnmt_1_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_2\cnmt_2_a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_2\cnmt_2_a2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_2\cnmt_2_b1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_2\cnmt_2_b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_2\cnmt_2_c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_2\cnmt_2_c2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_2\cnmt_2_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_3\cnmt_3_a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_3\cnmt_3_a2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_3\cnmt_3_b1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_3\cnmt_3_b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_3\cnmt_3_c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_3\cnmt_3_c2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_3\cnmt_3_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_4\cnmt_4_a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_4\cnmt_4_a2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_4\cnmt_4_b1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_4\cnmt_4_b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_4\cnmt_4_c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_4\cnmt_4_c2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_4\cnmt_4_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_5\cnmt_5_a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_5\cnmt_5_a2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_5\cnmt_5_b1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_5\cnmt_5_b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_5\cnmt_5_c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_5\cnmt_5_c2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_5\cnmt_5_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_6\cnmt_6_a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_6\cnmt_6_a2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_6\cnmt_6_b1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_6\cnmt_6_b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_6\cnmt_6_c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_6\cnmt_6_c2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_6\cnmt_6_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_7\cnmt_7_a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_7\cnmt_7_a2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_7\cnmt_7_b1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_7\cnmt_7_b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_7\cnmt_7_c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_7\cnmt_7_c2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_7\cnmt_7_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_8\cnmt_8_a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_8\cnmt_8_a2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_8\cnmt_8_b1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_8\cnmt_8_b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_8\cnmt_8_c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_8\cnmt_8_c2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_8\cnmt_8_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_p\cnmt_p_a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_p\cnmt_p_a2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_p\cnmt_p_b1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_p\cnmt_p_b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_p\cnmt_p_c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_p\cnmt_p_c2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnmt_p\cnmt_p_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beep-02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beep-01.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

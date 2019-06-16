@@ -1,0 +1,52 @@
+再認分數(retained recognition):0
+StageA OK-ONE:0
+StageB OK-ONE:0
+StageC OK-ONE:0
+StageA OK-TWO:0
+StageB OK-TWO:0
+StageC OK-TWO:0
+StageA CC:11
+StageB CC:11
+StageC CC:11
+StageA CL:0
+StageB CS:0
+StageC CQ:0
+過程記錄
+cnmtstage:0
+cnmt_trytime:0
+[2,703], [0,0], [0,0], [0,0], [0,0], [0,0],  
+ 
+cnmt_trytime:1
+[2,672], [0,0], [0,0], [0,0], [0,0], [0,0],  
+ 
+cnmt_trytime:2
+[2,484], [0,0], [0,0], [0,0], [0,0], [0,0],  
+ 
+cnmt_trytime:3
+[2,516], [0,0], [0,0], [0,0], [0,0], [0,0],  
+ 
+cnmt_trytime:4
+[2,468], [0,0], [0,0], [0,0], [0,0], [0,0],  
+ 
+cnmt_trytime:5
+[2,469], [0,0], [0,0], [0,0], [0,0], [0,0],  
+ 
+cnmt_trytime:6
+[2,375], [0,0], [0,0], [0,0], [0,0], [0,0],  
+ 
+cnmt_trytime:7
+[2,422], [0,0], [0,0], [0,0], [0,0], [0,0],  
+ 
+cnmt_trytime:8
+[2,422], [0,0], [0,0], [0,0], [0,0], [0,0],  
+ 
+cnmt_trytime:9
+[2,375], [0,0], [0,0], [0,0], [0,0], [0,0],  
+ 
+cnmtstage:1
+cnmtstage:2
+cnmtstage:3
+cnmt_trytime:0
+[1,921], [1,1500], [4,2343], [0,0], [0,0], [0,0],  
+[1,672], [2,1125], [3,1578], [0,0], [0,0], [0,0],  
+ 

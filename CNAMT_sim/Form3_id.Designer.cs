@@ -46,6 +46,8 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -199,7 +201,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("標楷體", 15.75F);
-            this.button1.Location = new System.Drawing.Point(607, 360);
+            this.button1.Location = new System.Drawing.Point(622, 394);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 29);
             this.button1.TabIndex = 17;
@@ -207,11 +209,32 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(372, 344);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(195, 22);
+            this.textBox9.TabIndex = 19;
+            this.textBox9.Visible = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("標楷體", 15.75F);
+            this.label10.Location = new System.Drawing.Point(92, 340);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(98, 21);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "輸入常模";
+            this.label10.Visible = false;
+            // 
             // Form3_id
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 415);
+            this.ClientSize = new System.Drawing.Size(851, 472);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
@@ -258,5 +281,7 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label10;
     }
 }

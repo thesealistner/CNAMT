@@ -1,0 +1,24 @@
+測驗1
+第1題: 1000    impulsive
+第2題: 1500    impulsive
+第3題: 4359   2
+第4題: 2547   3
+第5題: 5078   4
+第6題: 2329    impulsive
+第7題: 3234    impulsive
+第8題: 4813   7
+第9題: 0    missing
+第10題: 0    missing
+第11題: 0    missing
+第12題: 0    missing
+第13題: 0    missing
+第14題: 0    missing
+第15題: 0    missing
+第16題: 0    missing
+第17題: 0    missing
+第18題: 0    missing
+missing: 10
+impulsive: 4
+delay: 0
+correct: 4
+correct_avg: 4199
