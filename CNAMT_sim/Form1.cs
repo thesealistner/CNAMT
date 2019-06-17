@@ -2496,40 +2496,73 @@ namespace CNAMT_sim
         {
             panel.openpicturetest6(); //show picture
             locationbig = 7;
-            for (int i = 0; i < 74; i++)
+            for (int i = 0; i < 36; i++)
             {
-                locationsmall = i;// 小題題號
+                //locationsmall = i;// 小題題號
                 //textBox1.AppendText("迴圈開始" + Convert.ToString(i) + " \r\n");//debug
+
+                //  2*I
                 cnatgo = 0;
                 //紀錄:測驗??  的第i 小題
-                cnatmove2(delaycnat[locationbig][i], lighttime, waitaction, lightcnat[locationbig][i]);
-                while (cnatgo == 0)//要進下一輪
+                cnatmove2(delaycnat[locationbig][2*i], lighttime, waitaction, lightcnat[locationbig][2*i]);
+                while (cnatgo == 0)//要進下一輪  //timer 到變成1
                 {
                     Application.DoEvents();
                 }
                 //先存這輪的資料
                 if (press == 1) //沒有按: result 存入-1  有按存時間
                 {
-                    resulttime[locationbig][locationsmall] = timelength;
+                    resulttime[locationbig][2*i] = timelength;
                     press = 0;
                 }
                 else
                 {
-                    resulttime[locationbig][locationsmall] = -1;
+                    resulttime[locationbig][2*i] = -1;
                 }
                 //判斷成功
 
                 //左右     //0 代表沒按 1右手 2左手
                 if (lr7 == 1)
                 {
-                    leftright[i] = 1;
+                    leftright[2*i] = 1;
                 }
                 if (lr7 == 2)
                 {
-                    leftright[i] = 2;
+                    leftright[2*i] = 2;
                 }
                 lr7 = 0;
-                textBox1.AppendText("測驗7題號" + Convert.ToString(i) + "  " + Convert.ToString(resulttime[locationbig][i]) + " \r\n");//debug
+                textBox1.AppendText("測驗7題號" + Convert.ToString(2 * i) + "  " + Convert.ToString(resulttime[locationbig][2 * i]) + " \r\n");//debug
+                // 2*i +1
+                cnatgo = 0;
+                //紀錄:測驗??  的第i 小題
+                cnatmove3(delaycnat[locationbig][(2 * i)+1], lighttime, waitaction, lightcnat[locationbig][(2 * i)+1]);
+                while (cnatgo == 0)//要進下一輪  //timer 到變成1
+                {
+                    Application.DoEvents();
+                }
+                //先存這輪的資料
+                if (press == 1) //沒有按: result 存入-1  有按存時間
+                {
+                    resulttime[locationbig][2*i+1] = timelength;
+                    press = 0;
+                }
+                else
+                {
+                    resulttime[locationbig][2*i+1] = -1;
+                }
+                //判斷成功
+
+                //左右     //0 代表沒按 1右手 2左手
+                if (lr7 == 1)
+                {
+                    leftright[(2*i)+1] = 1;
+                }
+                if (lr7 == 2)
+                {
+                    leftright[(2 * i) + 1] = 2;
+                }
+                lr7 = 0;
+                textBox1.AppendText("測驗7題號" + Convert.ToString((2*i)+1) + "  " + Convert.ToString(resulttime[locationbig][(2*i)+1]) + " \r\n");//debug
             }
 
             //判斷拉出來
@@ -2890,6 +2923,30 @@ namespace CNAMT_sim
             timer7.Interval = waitaction;
             timer8.Interval = 1000;
             playaudiocnat1();//聲音
+            beeptimetick = System.Environment.TickCount;   //紀錄聲音時間
+            recordpress = locationbig; //第一題收資
+
+            changelightnum(lightnum);//變燈
+            textBox1.AppendText("燈號:  " + Convert.ToString(lightnum) + " \r\n");//debug
+            timer5.Enabled = true;
+
+        }
+
+
+
+        public void cnatmove3(int delay01, int lighttime, int waitaction, int lightnum)// test 7 專用  等於 cnatmove2  不逼+所有timer關掉     
+        {
+            timer5.Enabled = false;
+            timer6.Enabled = false;
+            timer7.Enabled = false;
+            timer8.Enabled = false;
+            recordpress = 0;
+            //cnatgo = 1;
+            timer5.Interval = delay01;
+            timer6.Interval = lighttime;
+            timer7.Interval = waitaction;
+            timer8.Interval = 1000;
+            //playaudiocnat1();//聲音
             beeptimetick = System.Environment.TickCount;   //紀錄聲音時間
             recordpress = locationbig; //第一題收資
 
