@@ -80,7 +80,7 @@ namespace CNAMT_sim
             /*textBox1.AppendText("input=");
             textBox1.AppendText(buttoninput);
             textBox1.AppendText("\r\n");*/
-
+            turnofflight();//關燈
             if (buttontest1 == 1)   //右手測試1       //回丟的數字決定要怎摸處理把手的input
             {
                 if (buttoninput == "3")
@@ -234,7 +234,7 @@ namespace CNAMT_sim
             /*textBox1.AppendText("input=");
             textBox1.AppendText(buttoninput);
             textBox1.AppendText("\r\n");*/
-
+            turnofflight();//關燈
             if (buttontest1 == 1)   //右手測試1       //回丟的數字決定要怎摸處理把手的input
             {
                 if (buttoninput == "3")
@@ -1524,6 +1524,10 @@ namespace CNAMT_sim
 
         public void cnat_continue2(int continuepoint)
         {
+            if(resulttime[1][19] == 3500)//如果讀回去
+            {
+                waitaction = 3500;
+            }
             if (continuepoint == 2)
             {
                 cnat1_judge2();
@@ -1612,9 +1616,9 @@ namespace CNAMT_sim
         public void cnat1_judge2() //CNAT 測驗1 判斷式
         {
             locationbig = 1;
-            for (int i = 1; i < 19; i++)
+            for (int i = 0; i < 18; i++)
             {
-                if (resulttime[locationbig][locationsmall] != -1 && resulttime[locationbig][i] > delaycnat[locationbig][i - 1] + 100)
+                if (resulttime[locationbig][locationsmall] != -1 && resulttime[locationbig][i] > delaycnat[locationbig][i] + 100)
                 {
                     cnatsuccess_1 = cnatsuccess_1 + 1;
                 }
@@ -1681,9 +1685,9 @@ namespace CNAMT_sim
         public void cnat2_judge2()
         {
             locationbig = 2;
-            for (int i = 1; i < 19; i++)
+            for (int i = 0; i < 18; i++)
             {
-                if (resulttime[locationbig][locationsmall] != -1 && resulttime[locationbig][i] > delaycnat[locationbig][i - 1] + 100)
+                if (resulttime[locationbig][locationsmall] != -1 && resulttime[locationbig][i] > delaycnat[locationbig][i] + 100)
                 {
                     cnatsuccess_2 = cnatsuccess_2 + 1;
                 }
@@ -1759,7 +1763,7 @@ namespace CNAMT_sim
             for (int i = 1; i < 19; i++)
             {
                 //判斷成功
-                if (resulttime[locationbig][locationsmall] != -1 && resulttime[locationbig][locationsmall] > delaycnat[locationbig][i] + 100)
+                if (resulttime[locationbig][locationsmall] != -1 && resulttime[locationbig][i] > delaycnat[locationbig][i] + 100)
                 {
                     cnatsuccess_3 = cnatsuccess_3 + 1;  //這裡依測驗要改
                     if (lightcnat[locationbig][i] >= 0 && lightcnat[locationbig][i] <= 19)
@@ -1945,6 +1949,7 @@ namespace CNAMT_sim
                 {
                     onefourredo = 1;
                     lighttime = 3000;
+                    textBox1.AppendText(Convert.ToString(cnatsuccess_1) +" "+ Convert.ToString(cnatsuccess_2)+" "+Convert.ToString(cnatsuccess_3)+" "+Convert.ToString(cnatsuccess_4));
                     pop.readfrom1("彈性施測2觸發，重做測驗1-4", "按下直接開始測驗練習1", "cnatp1", "", "");//
                 }
                 else   //沒出問題
@@ -2861,8 +2866,8 @@ namespace CNAMT_sim
             timer6.Interval = lighttime;
             timer7.Interval = waitaction;
             timer8.Interval = 1000;
-            playaudiocnat1();//聲音
             changelightnum(lightnum);
+            playaudiocnat1();//聲音
             textBox1.AppendText("燈號:  " + Convert.ToString(lightnum) + " \r\n");//debug
 
             //存檔之後在寫
@@ -4249,7 +4254,7 @@ namespace CNAMT_sim
             sw.WriteLine("再認分數(retained recognition):" + cnmtagainrightcount[cnmtlocationbig]);
 
             //暫存各數據用
-            int []ok_1 = new int[] {0,0,0};//stage 123
+            int[] ok_1 = new int[] { 0, 0, 0 };//stage 123
             int[] ok_2 = new int[] { 0, 0, 0 };//stage 123
             int[] cc = new int[] { 0, 0, 0 };//stage 123
             int[] clsq = new int[] { 0, 0, 0 };//stage 123
@@ -4257,16 +4262,16 @@ namespace CNAMT_sim
 
             //stage0 ok1
             for (int i = 0; i < 10; i++)
-            { 
+            {
                 if (cnmtresultpress3[cnmtlocationbig, 0, i, 5, 5] != 0)
                 {
-                    ok_1[0] = i+1;
+                    ok_1[0] = i + 1;
                 }
             }
             if (ok_1[0] == 0)
             {
-                sw.WriteLine("StageA OK-ONE: NC");
-                }
+                sw.WriteLine("StageA OK-ONE:"+ ok_1[0]+"  NC");
+            }
             else
             {
                 sw.WriteLine("StageA OK-ONE:" + ok_1[0]);
@@ -4281,7 +4286,7 @@ namespace CNAMT_sim
             }
             if (ok_1[1] == 0)
             {
-                sw.WriteLine("StageB OK-ONE: NC");
+                sw.WriteLine("StageB OK-ONE:" + ok_1[1] + "  NC");
             }
             else
             {
@@ -4297,13 +4302,13 @@ namespace CNAMT_sim
             }
             if (ok_1[2] == 0)
             {
-                sw.WriteLine("StageC OK-ONE: NC");
+                sw.WriteLine("StageC OK-ONE:" + ok_1[2] + "  NC");
             }
             else
             {
                 sw.WriteLine("StageC OK-ONE:" + ok_1[2]);
             }
-       
+
 
 
 
@@ -4315,7 +4320,13 @@ namespace CNAMT_sim
                     ok_2[0] = i + 1;
                 }
             }
-            sw.WriteLine("StageA OK-TWO:" + ok_2[0]);
+            if (ok_2[0] == 0)
+            {
+                sw.WriteLine("StageA OK-TWO:" + ok_2[0] + "  NC");
+            } else
+            { 
+             sw.WriteLine("StageA OK-TWO:" + ok_2[0]);
+            }
 
             for (int i = 0; i < 6; i++)
             {
@@ -4324,7 +4335,14 @@ namespace CNAMT_sim
                     ok_2[1] = i + 1;
                 }
             }
-            sw.WriteLine("StageB OK-TWO:" + ok_2[1]);
+            if (ok_2[1] == 0)
+            {
+                sw.WriteLine("StageB OK-TWO:" + ok_2[1] + "  NC");
+            }
+            else
+            {
+                sw.WriteLine("StageB OK-TWO:" + ok_2[1]);
+            }
 
             for (int i = 0; i < 6; i++)
             {
@@ -4333,7 +4351,14 @@ namespace CNAMT_sim
                     ok_2[2] = i + 1;
                 }
             }
-            sw.WriteLine("StageC OK-TWO:" + ok_2[2]);
+            if (ok_2[2] == 0)
+            {
+                sw.WriteLine("StageC OK-TWO:" + ok_2[2] + "  NC");
+            }
+            else
+            {
+                sw.WriteLine("StageC OK-TWO:" + ok_2[2]);
+            }
 
 
 

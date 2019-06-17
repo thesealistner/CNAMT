@@ -380,7 +380,7 @@ namespace CNAMT_sim
 
             StreamReader str = new StreamReader(dialog.FileName);
 
-            for (int i = 0; i < 74; i++)
+            for (int i = 0; i < 72; i++)
             {
                 fromfile = str.ReadLine();
                 if (fromfile == "-1")
