@@ -4987,7 +4987,7 @@ namespace CNAMT_sim
 
             if (donetwice == 1)
             {
-                Thread.Sleep(300);
+                Thread.Sleep(200);
                 lightbotton6(); //下面燈
                 cnmtbeeptimetick = System.Environment.TickCount;   //紀錄聲音時間
                 for (int j = 0; j < 6; j++)
@@ -5046,7 +5046,7 @@ namespace CNAMT_sim
             for (int i = 1; i < 7; i++)  //要做 1 12 123 1234 12345 123456 6輪
             {
                 //light6();//下面6個燈號都要亮起來
-                Thread.Sleep(300);
+                Thread.Sleep(200);
                 lightbotton6();
                 cnmtbeeptimetick = System.Environment.TickCount;   //紀錄聲音時間
                                                                    //playaudiocnmt1();//聲音   小題開始
