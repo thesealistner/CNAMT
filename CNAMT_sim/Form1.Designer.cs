@@ -59,6 +59,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
+            this.timer11 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // textBox1
@@ -304,6 +305,10 @@
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.Button13_Click);
             // 
+            // timer11
+            // 
+            this.timer11.Tick += new System.EventHandler(this.Timer11_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -368,6 +373,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Timer timer11;
     }
 }
 
