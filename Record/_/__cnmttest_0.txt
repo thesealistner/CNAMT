@@ -1,0 +1,26 @@
+再認分數(retained recognition):3
+StageA OK-ONE:0  NC
+StageB OK-ONE:0  NC
+StageC OK-ONE:0  NC
+StageA OK-TWO:0  NC
+StageB OK-TWO:0  NC
+StageC OK-TWO:0  NC
+StageA CC:11
+StageB CC:11
+StageC CC:11
+StageA CL:0
+StageB CS:0
+StageC CQ:0
+過程記錄
+cnmtstage:0
+cnmtstage:1
+cnmtstage:2
+cnmtstage:3
+cnmt_trytime:0
+[1,1,1453], [3,2,1985], [5,5,2813], [0,0,0], [0,0,0], [0,0,0],  
+[1,6,656], [3,3,1140], [5,2,1750], [0,0,0], [0,0,0], [0,0,0],  
+[1,0,0], [3,0,0], [5,0,0], [0,0,0], [0,0,0], [0,0,0],  
+[1,0,0], [3,0,0], [5,0,0], [0,0,0], [0,0,0], [0,0,0],  
+[1,0,0], [3,0,0], [5,0,0], [0,0,0], [0,0,0], [0,0,0],  
+[1,0,0], [3,0,0], [5,0,0], [0,0,0], [0,0,0], [0,0,0],  
+ 
