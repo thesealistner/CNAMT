@@ -84,7 +84,12 @@ namespace CNAMT_sim
             turnofflight();//關燈
 
             //直接進1秒
-
+            //cnatgo = 1;
+            //timer5.Enabled = false;
+            //timer6.Enabled = false;
+            //timer7.Enabled = false;
+            //timer8.Enabled = false;
+            //cnatgo2 = 1;
 
             if (buttontest1 == 1)   //右手測試1       //回丟的數字決定要怎摸處理把手的input
             {
@@ -132,6 +137,13 @@ namespace CNAMT_sim
                     recordpress = 0;
                     press = 1;
                     timelength = presstimetick - beeptimetick;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
             }
             if (recordpress == 2)//第2題 只收又手
@@ -142,6 +154,13 @@ namespace CNAMT_sim
                     recordpress = 0;
                     press = 1;
                     timelength = presstimetick - beeptimetick;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
             }
             if (recordpress == 3)//第3題 只收左手
@@ -152,6 +171,13 @@ namespace CNAMT_sim
                     recordpress = 0;
                     press = 1;
                     timelength = presstimetick - beeptimetick;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
             }
             if (recordpress == 4)//第4題 只收右手
@@ -162,6 +188,13 @@ namespace CNAMT_sim
                     recordpress = 0;
                     press = 1;
                     timelength = presstimetick - beeptimetick;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
             }
             if (recordpress == 5)//第5題 只收左手
@@ -172,6 +205,13 @@ namespace CNAMT_sim
                     recordpress = 0;
                     press = 1;
                     timelength = presstimetick - beeptimetick;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
             }
             if (recordpress == 6)//第6題 只收右手
@@ -182,6 +222,13 @@ namespace CNAMT_sim
                     recordpress = 0;
                     press = 1;
                     timelength = presstimetick - beeptimetick;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
             }
             if (recordpress == 7)//第7題 左右手
@@ -194,6 +241,13 @@ namespace CNAMT_sim
                     timelength = presstimetick - beeptimetick;
                     //0 代表沒按 1右手 2左手
                     lr7 = 1;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
                 if (buttoninput == "2")
                 {
@@ -203,6 +257,13 @@ namespace CNAMT_sim
                     timelength = presstimetick - beeptimetick;
                     //0 代表沒按 1右手 2左手
                     lr7 = 2;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
             }
             if (recordpress == 8)//第8題 只收左手
@@ -213,6 +274,13 @@ namespace CNAMT_sim
                     recordpress = 0;
                     press = 1;
                     timelength = presstimetick - beeptimetick;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
             }
             if (recordpress == 9)//第9題 只收左手
@@ -223,6 +291,13 @@ namespace CNAMT_sim
                     recordpress = 0;
                     press = 1;
                     timelength = presstimetick - beeptimetick;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
             }
         }
@@ -240,12 +315,12 @@ namespace CNAMT_sim
             textBox1.AppendText(buttoninput);
             textBox1.AppendText("\r\n");*/
             turnofflight();//關燈
-            cnatgo = 1;
-            timer5.Enabled = false;
-            timer6.Enabled = false;
-            timer7.Enabled = false;
-            timer8.Enabled = false;
-            cnatgo2 = 1;
+            //cnatgo = 1;
+            //timer5.Enabled = false;
+            //timer6.Enabled = false;
+            //timer7.Enabled = false;
+            //timer8.Enabled = false;
+            //cnatgo2 = 1;
 
             if (buttontest1 == 1)   //右手測試1       //回丟的數字決定要怎摸處理把手的input
             {
@@ -293,6 +368,13 @@ namespace CNAMT_sim
                     recordpress = 0;
                     press = 1;
                     timelength = presstimetick - beeptimetick;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
             }
             if (recordpress == 2)//第2題 只收又手
@@ -303,6 +385,13 @@ namespace CNAMT_sim
                     recordpress = 0;
                     press = 1;
                     timelength = presstimetick - beeptimetick;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
             }
             if (recordpress == 3)//第3題 只收左手
@@ -313,6 +402,13 @@ namespace CNAMT_sim
                     recordpress = 0;
                     press = 1;
                     timelength = presstimetick - beeptimetick;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
             }
             if (recordpress == 4)//第4題 只收右手
@@ -323,6 +419,13 @@ namespace CNAMT_sim
                     recordpress = 0;
                     press = 1;
                     timelength = presstimetick - beeptimetick;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
             }
             if (recordpress == 5)//第5題 只收左手
@@ -333,6 +436,13 @@ namespace CNAMT_sim
                     recordpress = 0;
                     press = 1;
                     timelength = presstimetick - beeptimetick;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
             }
             if (recordpress == 6)//第6題 只收右手
@@ -343,6 +453,13 @@ namespace CNAMT_sim
                     recordpress = 0;
                     press = 1;
                     timelength = presstimetick - beeptimetick;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
             }
             if (recordpress == 7)//第7題 左右手
@@ -355,6 +472,13 @@ namespace CNAMT_sim
                     timelength = presstimetick - beeptimetick;
                     //0 代表沒按 1右手 2左手
                     lr7 = 1;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
                 if (buttoninput == "2")
                 {
@@ -364,6 +488,13 @@ namespace CNAMT_sim
                     timelength = presstimetick - beeptimetick;
                     //0 代表沒按 1右手 2左手
                     lr7 = 2;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
             }
             if (recordpress == 8)//第8題 只收左手
@@ -374,6 +505,13 @@ namespace CNAMT_sim
                     recordpress = 0;
                     press = 1;
                     timelength = presstimetick - beeptimetick;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
             }
             if (recordpress == 9)//第9題 只收左手
@@ -384,6 +522,13 @@ namespace CNAMT_sim
                     recordpress = 0;
                     press = 1;
                     timelength = presstimetick - beeptimetick;
+
+                    cnatgo = 1;
+                    timer5.Enabled = false;
+                    timer6.Enabled = false;
+                    timer7.Enabled = false;
+                    timer8.Enabled = false;
+                    cnatgo2 = 1;
                 }
             }
         }
@@ -1159,7 +1304,15 @@ namespace CNAMT_sim
                 {
                     Application.DoEvents();
                 }
-               
+                if (cnatgo2 == 1)
+                {
+                    timer11.Interval = 1000;
+                    timer11.Enabled = true;
+                    while (cnatgo2 == 1)
+                    {
+                        Application.DoEvents();
+                    }
+                }
 
                 textBox1.AppendText("迴圈結束" + Convert.ToString(i) + " \r\n");//debug
             }
@@ -1199,6 +1352,15 @@ namespace CNAMT_sim
                 {
                     Application.DoEvents();
                 }
+                if (cnatgo2 == 1)
+                {
+                    timer11.Interval = 1000;
+                    timer11.Enabled = true;
+                    while (cnatgo2 == 1)
+                    {
+                        Application.DoEvents();
+                    }
+                }
                 textBox1.AppendText("迴圈結束" + Convert.ToString(i) + " \r\n");//debug
             }
             cnatp2_3();
@@ -1236,6 +1398,15 @@ namespace CNAMT_sim
                 {
                     Application.DoEvents();
                 }
+                if (cnatgo2 == 1)
+                {
+                    timer11.Interval = 1000;
+                    timer11.Enabled = true;
+                    while (cnatgo2 == 1)
+                    {
+                        Application.DoEvents();
+                    }
+                }
                 textBox1.AppendText("迴圈結束" + Convert.ToString(i) + " \r\n");//debug
             }
             cnatp3_3();
@@ -1272,6 +1443,15 @@ namespace CNAMT_sim
                 while (cnatgo == 0)
                 {
                     Application.DoEvents();
+                }
+                if (cnatgo2 == 1)
+                {
+                    timer11.Interval = 1000;
+                    timer11.Enabled = true;
+                    while (cnatgo2 == 1)
+                    {
+                        Application.DoEvents();
+                    }
                 }
                 textBox1.AppendText("迴圈結束" + Convert.ToString(i) + " \r\n");//debug
             }
@@ -1312,6 +1492,15 @@ namespace CNAMT_sim
                 {
                     Application.DoEvents();
                 }
+                if (cnatgo2 == 1)
+                {
+                    timer11.Interval = 1000;
+                    timer11.Enabled = true;
+                    while (cnatgo2 == 1)
+                    {
+                        Application.DoEvents();
+                    }
+                }
                 textBox1.AppendText("迴圈結束" + Convert.ToString(i) + " \r\n");//debug
             }
             cnatp5_3();
@@ -1350,6 +1539,15 @@ namespace CNAMT_sim
                 while (cnatgo == 0)
                 {
                     Application.DoEvents();
+                }
+                if (cnatgo2 == 1)
+                {
+                    timer11.Interval = 1000;
+                    timer11.Enabled = true;
+                    while (cnatgo2 == 1)
+                    {
+                        Application.DoEvents();
+                    }
                 }
                 textBox1.AppendText("迴圈結束" + Convert.ToString(i) + " \r\n");//debug
             }
@@ -1390,6 +1588,15 @@ namespace CNAMT_sim
                 {
                     Application.DoEvents();
                 }
+                if (cnatgo2 == 1)
+                {
+                    timer11.Interval = 1000;
+                    timer11.Enabled = true;
+                    while (cnatgo2 == 1)
+                    {
+                        Application.DoEvents();
+                    }
+                }
                 textBox1.AppendText("迴圈結束" + Convert.ToString(i) + " \r\n");//debug
             }
             cnatp7_3();
@@ -1428,6 +1635,15 @@ namespace CNAMT_sim
                 while (cnatgo == 0)
                 {
                     Application.DoEvents();
+                }
+                if (cnatgo2 == 1)
+                {
+                    timer11.Interval = 1000;
+                    timer11.Enabled = true;
+                    while (cnatgo2 == 1)
+                    {
+                        Application.DoEvents();
+                    }
                 }
                 textBox1.AppendText("迴圈結束" + Convert.ToString(i) + " \r\n");//debug
             }
@@ -1732,6 +1948,15 @@ namespace CNAMT_sim
                 {
                     Application.DoEvents();
                 }
+                if (cnatgo2 == 1)
+                {
+                    timer11.Interval = 1000;
+                    timer11.Enabled = true;
+                    while (cnatgo2 == 1)
+                    {
+                        Application.DoEvents();
+                    }
+                }
                 //先存這輪的資料
                 if (press == 1) //有按: 
                 {
@@ -1832,6 +2057,15 @@ namespace CNAMT_sim
                 {
                     Application.DoEvents();
                 }
+                if (cnatgo2 == 1)
+                {
+                    timer11.Interval = 1000;
+                    timer11.Enabled = true;
+                    while (cnatgo2 == 1)
+                    {
+                        Application.DoEvents();
+                    }
+                }
                 //先存這輪的資料
                 if (press == 1) //沒有按: result 存入-1
                 {
@@ -1929,6 +2163,15 @@ namespace CNAMT_sim
                 while (cnatgo == 0)//要進下一輪
                 {
                     Application.DoEvents();
+                }
+                if (cnatgo2 == 1)
+                {
+                    timer11.Interval = 1000;
+                    timer11.Enabled = true;
+                    while (cnatgo2 == 1)
+                    {
+                        Application.DoEvents();
+                    }
                 }
                 //先存這輪的資料
                 if (press == 1) //沒有按: result 存入-1
@@ -2101,6 +2344,15 @@ namespace CNAMT_sim
                 {
                     Application.DoEvents();
                 }
+                if (cnatgo2 == 1)
+                {
+                    timer11.Interval = 1000;
+                    timer11.Enabled = true;
+                    while (cnatgo2 == 1)
+                    {
+                        Application.DoEvents();
+                    }
+                }
                 //先存這輪的資料
                 if (press == 1) //沒有按: result 存入-1
                 {
@@ -2256,6 +2508,15 @@ namespace CNAMT_sim
                 while (cnatgo == 0)//要進下一輪
                 {
                     Application.DoEvents();
+                }
+                if (cnatgo2 == 1)
+                {
+                    timer11.Interval = 1000;
+                    timer11.Enabled = true;
+                    while (cnatgo2 == 1)
+                    {
+                        Application.DoEvents();
+                    }
                 }
                 //先存這輪的資料
                 if (press == 1) //沒有按: result 存入-1
@@ -2521,73 +2782,189 @@ namespace CNAMT_sim
         {
             panel.openpicturetest6(); //show picture
             locationbig = 7;
-            for (int i = 0; i < 36; i++)
+
+            for (int i = 0; i < 1; i++)//地7題第0小題
             {
-                //locationsmall = i;// 小題題號
+                locationsmall = i;// 小題題號
                 //textBox1.AppendText("迴圈開始" + Convert.ToString(i) + " \r\n");//debug
-
-                //  2*I
                 cnatgo = 0;
                 //紀錄:測驗??  的第i 小題
-                cnatmove2(delaycnat[locationbig][2*i], lighttime, waitaction, lightcnat[locationbig][2*i]);
-                while (cnatgo == 0)//要進下一輪  //timer 到變成1
+                cnatmove2(delaycnat[locationbig][i], lighttime, waitaction, lightcnat[locationbig][i]);
+                while (cnatgo == 0)//要進下一輪
                 {
                     Application.DoEvents();
                 }
-                //先存這輪的資料
-                if (press == 1) //沒有按: result 存入-1  有按存時間
+                if (cnatgo2 == 1)
                 {
-                    resulttime[locationbig][2*i] = timelength;
+                    timer11.Interval = 1000;
+                    timer11.Enabled = true;
+                    while (cnatgo2 == 1)
+                    {
+                        Application.DoEvents();
+                    }
+                }
+                //先存這輪的資料
+                if (press == 1) //沒有按: result 存入-1
+                {
+                    resulttime[locationbig][locationsmall] = timelength;
                     press = 0;
                 }
                 else
                 {
-                    resulttime[locationbig][2*i] = -1;
+                    resulttime[locationbig][locationsmall] = -1;
+                }
+                //判斷成功
+                if (lr7 == 1)
+                {
+                    leftright[i] = 1;
+                }
+                if (lr7 == 2)
+                {
+                    leftright[i] = 2;
+                }
+                lr7 = 0;
+
+                textBox1.AppendText("測驗7題號" + Convert.ToString(i) + "  " + Convert.ToString(resulttime[locationbig][i]) + " \r\n");//debug
+
+            }
+
+            for (int i = 1; i < 37; i++)
+            {
+                locationsmall = i;// 小題題號
+                //textBox1.AppendText("迴圈開始" + Convert.ToString(locationsmall) + " \r\n");//debug
+
+                /*cnatgo = 1;
+                timer5.Enabled = false;
+                timer6.Enabled = false;
+                timer7.Enabled = false;
+                timer8.Enabled = false;
+                cnatgo2 = 1;*/
+
+                //  2*locationsmall
+                cnatgo = 0;
+                //紀錄:測驗??  的第locationsmall 小題
+                cnatmove2(delaycnat[locationbig][(locationsmall*2)-1], lighttime, waitaction, lightcnat[locationbig][(locationsmall*2) - 1]);
+                while (cnatgo == 0)//要進下一輪  //timer 到變成1
+                {
+                    Application.DoEvents();
+                }
+                if (cnatgo2 == 1)
+                {
+                    timer11.Interval = 1;
+                    timer11.Enabled = true;
+                    while (cnatgo2 == 1)
+                    {
+                        Application.DoEvents();
+                    }
+                }
+                //先存這輪的資料
+                if (press == 1) //沒有按: result 存入-1  有按存時間
+                {
+                    resulttime[locationbig][(2 * locationsmall) - 1] = timelength;
+                    press = 0;
+                }
+                else
+                {
+                    resulttime[locationbig][(2 * locationsmall) - 1] = -1;
                 }
                 //判斷成功
 
                 //左右     //0 代表沒按 1右手 2左手
                 if (lr7 == 1)
                 {
-                    leftright[2*i] = 1;
+                    leftright[(2 * locationsmall) - 1] = 1;
                 }
                 if (lr7 == 2)
                 {
-                    leftright[2*i] = 2;
+                    leftright[(2 * locationsmall) - 1] = 2;
                 }
                 lr7 = 0;
-                textBox1.AppendText("測驗7題號" + Convert.ToString(2 * i) + "  " + Convert.ToString(resulttime[locationbig][2 * i]) + " \r\n");//debug
-                // 2*i +1
+                textBox1.AppendText("測驗7題號" + Convert.ToString((2 * locationsmall)-1) + "  " + Convert.ToString(resulttime[locationbig][(2 * locationsmall)-1]) + " \r\n");//debug
+                // 2*locationsmall +1
                 cnatgo = 0;
-                //紀錄:測驗??  的第i 小題
-                cnatmove3(delaycnat[locationbig][(2 * i)+1], lighttime, waitaction, lightcnat[locationbig][(2 * i)+1]);
+                //紀錄:測驗??  的第locationsmall 小題
+                cnatmove3(delaycnat[locationbig][2*locationsmall], lighttime, waitaction, lightcnat[locationbig][2 * locationsmall]);
                 while (cnatgo == 0)//要進下一輪  //timer 到變成1
                 {
                     Application.DoEvents();
                 }
+                if (cnatgo2 == 1)
+                {
+                    timer11.Interval = 1000;
+                    timer11.Enabled = true;
+                    while (cnatgo2 == 1)
+                    {
+                        Application.DoEvents();
+                    }
+                }
                 //先存這輪的資料
                 if (press == 1) //沒有按: result 存入-1  有按存時間
                 {
-                    resulttime[locationbig][2*i+1] = timelength;
+                    resulttime[locationbig][2 * locationsmall] = timelength;
                     press = 0;
                 }
                 else
                 {
-                    resulttime[locationbig][2*i+1] = -1;
+                    resulttime[locationbig][2 * locationsmall] = -1;
                 }
                 //判斷成功
 
                 //左右     //0 代表沒按 1右手 2左手
                 if (lr7 == 1)
                 {
-                    leftright[(2*i)+1] = 1;
+                    leftright[2 * locationsmall] = 1;
                 }
                 if (lr7 == 2)
                 {
-                    leftright[(2 * i) + 1] = 2;
+                    leftright[2 * locationsmall] = 2;
                 }
                 lr7 = 0;
-                textBox1.AppendText("測驗7題號" + Convert.ToString((2*i)+1) + "  " + Convert.ToString(resulttime[locationbig][(2*i)+1]) + " \r\n");//debug
+                textBox1.AppendText("測驗7題號" + Convert.ToString((2*locationsmall)) + "  " + Convert.ToString(resulttime[locationbig][(2*locationsmall)]) + " \r\n");//debug
+            }
+
+            for (int i = 73; i < 74; i++)//地7題第0小題
+            {
+                locationsmall = i;// 小題題號
+                //textBox1.AppendText("迴圈開始" + Convert.ToString(i) + " \r\n");//debug
+                cnatgo = 0;
+                //紀錄:測驗??  的第i 小題
+                cnatmove2(delaycnat[locationbig][i], lighttime, waitaction, lightcnat[locationbig][i]);
+                while (cnatgo == 0)//要進下一輪
+                {
+                    Application.DoEvents();
+                }
+                if (cnatgo2 == 1)
+                {
+                    timer11.Interval = 1000;
+                    timer11.Enabled = true;
+                    while (cnatgo2 == 1)
+                    {
+                        Application.DoEvents();
+                    }
+                }
+                //先存這輪的資料
+                if (press == 1) //沒有按: result 存入-1
+                {
+                    resulttime[locationbig][locationsmall] = timelength;
+                    press = 0;
+                }
+                else
+                {
+                    resulttime[locationbig][locationsmall] = -1;
+                }
+                //判斷成功
+                if (lr7 == 1)
+                {
+                    leftright[i] = 1;
+                }
+                if (lr7 == 2)
+                {
+                    leftright[i] = 2;
+                }
+                lr7 = 0;
+
+                textBox1.AppendText("測驗7題號" + Convert.ToString(i) + "  " + Convert.ToString(resulttime[locationbig][i]) + " \r\n");//debug
+
             }
 
             //判斷拉出來
@@ -2723,6 +3100,15 @@ namespace CNAMT_sim
                 while (cnatgo == 0)//要進下一輪
                 {
                     Application.DoEvents();
+                }
+                if (cnatgo2 == 1)
+                {
+                    timer11.Interval = 1000;
+                    timer11.Enabled = true;
+                    while (cnatgo2 == 1)
+                    {
+                        Application.DoEvents();
+                    }
                 }
                 //先存這輪的資料
                 if (press == 1) //沒有按: result 存入-1  有按存時間
@@ -2872,6 +3258,15 @@ namespace CNAMT_sim
                 {
                     Application.DoEvents();
                 }
+                if (cnatgo2 == 1)
+                {
+                    timer11.Interval = 1000;
+                    timer11.Enabled = true;
+                    while (cnatgo2 == 1)
+                    {
+                        Application.DoEvents();
+                    }
+                }
                 //先存這輪的資料
                 if (press == 1) //沒有按: result 存入-1  有按存時間
                 {
@@ -2961,12 +3356,6 @@ namespace CNAMT_sim
 
         public void cnatmove3(int delay01, int lighttime, int waitaction, int lightnum)// test 7 專用  等於 cnatmove2  不逼+所有timer關掉     
         {
-            timer5.Enabled = false;
-            timer6.Enabled = false;
-            timer7.Enabled = false;
-            timer8.Enabled = false;
-            recordpress = 0;
-            //cnatgo = 1;
             timer5.Interval = delay01;
             timer6.Interval = lighttime;
             timer7.Interval = waitaction;
