@@ -4987,6 +4987,7 @@ namespace CNAMT_sim
 
             if (donetwice == 1)
             {
+                Thread.Sleep(100);
                 lightbotton6(); //下面燈
                 cnmtbeeptimetick = System.Environment.TickCount;   //紀錄聲音時間
                 for (int j = 0; j < 6; j++)
@@ -5024,7 +5025,7 @@ namespace CNAMT_sim
                         {
                             playaudiocnmtright();
                             panel.show1();//debug
-                            Thread.Sleep(150);
+                            //Thread.Sleep(150);
                             donetwice = donetwice + 1;
                             goto cnmtlabel;
                         }
@@ -5033,7 +5034,7 @@ namespace CNAMT_sim
                     {
                         playaudiocnmtwrong();//錯了要有聲音  
                         panel.show2();//debug
-                        Thread.Sleep(150);
+                        //Thread.Sleep(150);
                         cnmtwrongtime[cnmtlocationbig][cnmtstage] = cnmtwrongtime[cnmtlocationbig][cnmtstage] + 1;  // 錯誤計次++
                         cnmt_trycount[cnmtlocationbig, cnmtstage] = cnmt_trycount[cnmtlocationbig, cnmtstage] + 1;
                         goto cnmtlabel;  //跳出迴圈
@@ -5045,6 +5046,7 @@ namespace CNAMT_sim
             for (int i = 1; i < 7; i++)  //要做 1 12 123 1234 12345 123456 6輪
             {
                 //light6();//下面6個燈號都要亮起來
+                Thread.Sleep(150);
                 lightbotton6();
                 cnmtbeeptimetick = System.Environment.TickCount;   //紀錄聲音時間
                                                                    //playaudiocnmt1();//聲音   小題開始
@@ -5091,7 +5093,7 @@ namespace CNAMT_sim
                     {
                         playaudiocnmtwrong();//錯了要有聲音
                         panel.show2();//debug
-                        Thread.Sleep(150);
+                        //Thread.Sleep(150);
                         cnmtwrongtime[cnmtlocationbig][cnmtstage] = cnmtwrongtime[cnmtlocationbig][cnmtstage] + 1;  // 錯誤計次++
                         cnmt_trycount[cnmtlocationbig, cnmtstage] = cnmt_trycount[cnmtlocationbig, cnmtstage] + 1;
                         goto cnmtlabel;  //跳出迴圈
@@ -5099,7 +5101,7 @@ namespace CNAMT_sim
                 }
                 playaudiocnmtright();
                 panel.show1();//debug
-                Thread.Sleep(150);
+                //Thread.Sleep(150);
             }
 
             if (donetwice < 2)  //還不夠 對2次
