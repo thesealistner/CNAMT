@@ -86,12 +86,6 @@ namespace CNAMT_sim
             turnofflight();//關燈
 
             //直接進1秒
-            cnatgo2 = 1;
-            timer5.Enabled = false;
-            timer6.Enabled = false;
-            timer7.Enabled = false;
-            timer8.Enabled = false;
-            cnatgo = 1;
 
 
             if (buttontest1 == 1)   //右手測試1       //回丟的數字決定要怎摸處理把手的input
@@ -248,15 +242,6 @@ namespace CNAMT_sim
             textBox1.AppendText(buttoninput);
             textBox1.AppendText("\r\n");*/
             turnofflight();//關燈
-
-            timer5.Enabled = false;
-            timer6.Enabled = false;
-            timer7.Enabled = false;
-            timer8.Enabled = false;
-            cnatgo2 = 1;
-            cnatgo = 1;
-
-
             if (buttontest1 == 1)   //右手測試1       //回丟的數字決定要怎摸處理把手的input
             {
                 if (buttoninput == "3")
@@ -1169,13 +1154,6 @@ namespace CNAMT_sim
                 {
                     Application.DoEvents();
                 }
-                if(cnatgo2 == 1)
-                {
-                    while (cnatgo2 == 1)
-                    {
-                        timer11.Enabled = true;
-                    }
-                }
 
                 textBox1.AppendText("迴圈結束" + Convert.ToString(i) + " \r\n");//debug
             }
@@ -1667,13 +1645,6 @@ namespace CNAMT_sim
                 while (cnatgo == 0)//要進下一輪
                 {
                     Application.DoEvents();
-                }
-                if (cnatgo2 == 1)
-                {
-                    while (cnatgo2 == 1)
-                    {
-                        timer11.Enabled = true;
-                    }
                 }
                 //先存這輪的資料
                 if (press == 1) //沒有按: result 存入-1
