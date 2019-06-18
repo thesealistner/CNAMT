@@ -289,6 +289,7 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(111, 390);
             this.textBox1.TabIndex = 159;
+            this.textBox1.Visible = false;
             this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // pictureBox62
@@ -1175,6 +1176,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1174, 981);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox64);

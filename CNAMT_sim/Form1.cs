@@ -300,6 +300,7 @@ namespace CNAMT_sim
                     cnatgo2 = 1;
                 }
             }
+            //turnofflight();//關燈
         }
 
         public void AddData2()//從螢幕按鍵讀資料
@@ -2843,14 +2844,14 @@ namespace CNAMT_sim
                 //  2*locationsmall
                 cnatgo = 0;
                 //紀錄:測驗??  的第locationsmall 小題
-                cnatmove2(delaycnat[locationbig][(locationsmall*2)-1], lighttime, waitaction, lightcnat[locationbig][(locationsmall*2) - 1]);
+                cnatmove4(delaycnat[locationbig][(locationsmall*2)-1], lighttime, waitaction, lightcnat[locationbig][(locationsmall*2) - 1]);
                 while (cnatgo == 0)//要進下一輪  //timer 到變成1
                 {
                     Application.DoEvents();
                 }
                 if (cnatgo2 == 1)
                 {
-                    timer11.Interval = 1;
+                    timer11.Interval = 150;
                     timer11.Enabled = true;
                     while (cnatgo2 == 1)
                     {
@@ -2884,6 +2885,8 @@ namespace CNAMT_sim
                 cnatgo = 0;
                 //紀錄:測驗??  的第locationsmall 小題
                 cnatmove3(delaycnat[locationbig][2*locationsmall], lighttime, waitaction, lightcnat[locationbig][2 * locationsmall]);
+                
+                
                 while (cnatgo == 0)//要進下一輪  //timer 到變成1
                 {
                     Application.DoEvents();
@@ -3371,7 +3374,21 @@ namespace CNAMT_sim
         }
 
 
+        public void cnatmove4(int delay01, int lighttime, int waitaction, int lightnum)//test 7 專用  等於 cnatmove2           
+        {
+            timer5.Interval = delay01;
+            timer6.Interval = lighttime;
+            timer7.Interval = waitaction;
+            timer8.Interval = 1;
+            playaudiocnat1();//聲音
+            beeptimetick = System.Environment.TickCount;   //紀錄聲音時間
+            recordpress = locationbig; //第一題收資
 
+            changelightnum(lightnum);//變燈
+            textBox1.AppendText("燈號:  " + Convert.ToString(lightnum) + " \r\n");//debug
+            timer5.Enabled = true;
+
+        }
 
 
 
@@ -3385,7 +3402,7 @@ namespace CNAMT_sim
 
         private void changelightnum(int lightnum)  //把數字轉成redlight[]+greenlight[]  //把該位置0->1  //等於點亮
         {
-
+            //textBox1.AppendText("changelightnum" + " \r\n");//debug
             //綠燈42個  紅燈38個  兩個一起 36+2個
             //42+36+38+2=116+2
             //lightcnat[測驗幾號][燈號]=
@@ -7317,7 +7334,7 @@ namespace CNAMT_sim
             Form4_pop pop = new Form4_pop();
             pop.Owner = this;//要有這個不然不能傳
             pop.Visible = true;
-            pop.readfrom1(Convert.ToString("進行cnmt" + (cnmtlocationbig + 1) + "測驗"), "cnmt2", "cnmt2", "", "");//
+            pop.readfrom1(Convert.ToString("進行cnmt" + (cnmtlocationbig + 1) + "測驗"), "cnmt3", "cnmt3", "", "");//
         }
 
         //-CNMT3--------------------------------------------------
@@ -7953,7 +7970,7 @@ namespace CNAMT_sim
             Form4_pop pop = new Form4_pop();
             pop.Owner = this;//要有這個不然不能傳
             pop.Visible = true;
-            pop.readfrom1(Convert.ToString("進行cnmt" + (cnmtlocationbig + 1) + "測驗"), "cnmt3", "cnmt3", "", "");//
+            pop.readfrom1(Convert.ToString("進行cnmt" + (cnmtlocationbig + 1) + "測驗"), "cnmt4", "cnmt4", "", "");//
         }
 
 
@@ -8590,7 +8607,7 @@ namespace CNAMT_sim
             Form4_pop pop = new Form4_pop();
             pop.Owner = this;//要有這個不然不能傳
             pop.Visible = true;
-            pop.readfrom1(Convert.ToString("進行cnmt" + (cnmtlocationbig + 1) + "測驗"), "cnmt4", "cnmt4", "", "");//
+            pop.readfrom1(Convert.ToString("進行cnmt" + (cnmtlocationbig + 1) + "測驗"), "cnmt5", "cnmt5", "", "");//
         }
 
         //CNMT5---------------------------------------------------------
@@ -9226,7 +9243,7 @@ namespace CNAMT_sim
             Form4_pop pop = new Form4_pop();
             pop.Owner = this;//要有這個不然不能傳
             pop.Visible = true;
-            pop.readfrom1(Convert.ToString("進行cnmt" + (cnmtlocationbig + 1) + "測驗"), "cnmt5", "cnmt5", "", "");//
+            pop.readfrom1(Convert.ToString("進行cnmt" + (cnmtlocationbig + 1) + "測驗"), "cnmt6", "cnmt6", "", "");//
         }
 
         //CNMT 6--------------------------------------
@@ -9862,7 +9879,7 @@ namespace CNAMT_sim
             Form4_pop pop = new Form4_pop();
             pop.Owner = this;//要有這個不然不能傳
             pop.Visible = true;
-            pop.readfrom1(Convert.ToString("進行cnmt" + (cnmtlocationbig + 1) + "測驗"), "cnmt6", "cnmt6", "", "");//
+            pop.readfrom1(Convert.ToString("進行cnmt" + (cnmtlocationbig + 1) + "測驗"), "cnmt7", "cnmt7", "", "");//
         }
 
         // CNMT 7-------------------------------------------------------
@@ -10498,7 +10515,7 @@ namespace CNAMT_sim
             Form4_pop pop = new Form4_pop();
             pop.Owner = this;//要有這個不然不能傳
             pop.Visible = true;
-            pop.readfrom1(Convert.ToString("進行cnmt" + (cnmtlocationbig + 1) + "測驗"), "cnmt7", "cnmt7", "", "");//
+            pop.readfrom1(Convert.ToString("進行cnmt" + (cnmtlocationbig + 1) + "測驗"), "cnmt8", "cnmt8", "", "");//
         }
 
         //CNMT8--------------------------------------------
