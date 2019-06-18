@@ -285,7 +285,7 @@ namespace CNAMT_sim
             }
             if (recordpress == 9)//第9題 只收左手
             {
-                if (buttoninput == "2")
+                if (buttoninput == "3")
                 {
                     presstimetick = System.Environment.TickCount;
                     recordpress = 0;
@@ -517,7 +517,7 @@ namespace CNAMT_sim
             }
             if (recordpress == 9)//第9題 只收左手
             {
-                if (buttoninput == "2")
+                if (buttoninput == "3")
                 {
                     presstimetick = System.Environment.TickCount;
                     recordpress = 0;
@@ -2851,7 +2851,7 @@ namespace CNAMT_sim
                 }
                 if (cnatgo2 == 1)
                 {
-                    timer11.Interval = 150;
+                    timer11.Interval = 200;
                     timer11.Enabled = true;
                     while (cnatgo2 == 1)
                     {
