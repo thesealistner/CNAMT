@@ -683,7 +683,7 @@ namespace CNAMT_sim
                         {
                             forsd1[cnatlocationbig][cnat1_sd_count] = resulttimeread[cnatlocationbig][i];//把成功的放入forsd裡面供之後計算
                             cnat1_sd_count = cnat1_sd_count + 1; //記述++
-                            cnat1_sd_sum = cnat1_sd_sum + resulttimeread[cnatlocationbig][i];//算平均值用++
+                            cnat1_sd_sum = cnat1_sd_sum + resulttimeread[cnatlocationbig][i] - delaycnat[cnatlocationbig][i];//算平均值用++
                         }
                     }//計算SD用
 
@@ -726,7 +726,7 @@ namespace CNAMT_sim
                         {
                             wText.WriteLine("第" + Convert.ToString(i + 1) + "題: " + resulttimeread[cnatlocationbig][i] );
                             cnat1_correct = cnat1_correct + 1;
-                            cnat1_correct_sum = cnat1_correct_sum + resulttimeread[cnatlocationbig][i];
+                            cnat1_correct_sum = cnat1_correct_sum + resulttimeread[cnatlocationbig][i] - delaycnat[cnatlocationbig][i];
                         }
                     }//輸出到txt  同時記錄 cnat1_delay 數量
                     if (cnat1_correct == 0)//防BUG
@@ -761,7 +761,7 @@ namespace CNAMT_sim
                         {
                             forsd1[cnatlocationbig][cnat2_sd_count] = resulttimeread[cnatlocationbig][i];//把成功的放入forsd裡面供之後計算
                             cnat2_sd_count = cnat2_sd_count + 1; //記述++
-                            cnat2_sd_sum = cnat2_sd_sum + resulttimeread[cnatlocationbig][i];//算平均值用++
+                            cnat2_sd_sum = cnat2_sd_sum + resulttimeread[cnatlocationbig][i] - delaycnat[cnatlocationbig][i];//算平均值用++
                         }
                     }//計算SD用
 
@@ -804,7 +804,7 @@ namespace CNAMT_sim
                         {
                             wText.WriteLine("第" + Convert.ToString(i + 1) + "題: " + resulttimeread[cnatlocationbig][i]);
                             cnat2_correct = cnat2_correct + 1;
-                            cnat2_correct_sum = cnat2_correct_sum + resulttimeread[cnatlocationbig][i];
+                            cnat2_correct_sum = cnat2_correct_sum + resulttimeread[cnatlocationbig][i] - delaycnat[cnatlocationbig][i];
                         }
                     }//輸出到txt  同時記錄 cnat2_delay 數量
                     if (cnat2_correct == 0)//防BUG
@@ -840,7 +840,7 @@ namespace CNAMT_sim
                         {
                             forsd1[cnatlocationbig][cnat3_sd_count] = resulttimeread[cnatlocationbig][i];//把成功的放入forsd裡面供之後計算
                             cnat3_sd_count = cnat3_sd_count + 1; //記述++
-                            cnat3_sd_sum = cnat3_sd_sum + resulttimeread[cnatlocationbig][i];//算平均值用++
+                            cnat3_sd_sum = cnat3_sd_sum + resulttimeread[cnatlocationbig][i] - delaycnat[cnatlocationbig][i];//算平均值用++
                         }
                     }//計算SD用
 
@@ -882,7 +882,7 @@ namespace CNAMT_sim
                         {
                             wText.WriteLine("第" + Convert.ToString(i + 1) + "題: " + resulttimeread[cnatlocationbig][i]);
                             cnat3_correct = cnat3_correct + 1;
-                            cnat3_correct_sum = cnat3_correct_sum + resulttimeread[cnatlocationbig][i];
+                            cnat3_correct_sum = cnat3_correct_sum + resulttimeread[cnatlocationbig][i] - delaycnat[cnatlocationbig][i];
                         }
                     }//輸出到txt  同時記錄 cnat3_delay 數量
                     if (cnat3_correct == 0)//防BUG
@@ -921,7 +921,7 @@ namespace CNAMT_sim
                         {
                             forsd1[cnatlocationbig][cnat4_sd_count] = resulttimeread[cnatlocationbig][i];//把成功的放入forsd裡面供之後計算
                             cnat4_sd_count = cnat4_sd_count + 1; //記述++
-                            cnat4_sd_sum = cnat4_sd_sum + resulttimeread[cnatlocationbig][i];//算平均值用++
+                            cnat4_sd_sum = cnat4_sd_sum + resulttimeread[cnatlocationbig][i] - delaycnat[cnatlocationbig][i];//算平均值用++
                         }
                     }//計算SD用
 
@@ -965,7 +965,7 @@ namespace CNAMT_sim
                         {
                             wText.WriteLine("第" + Convert.ToString(i + 1) + "題: " + resulttimeread[cnatlocationbig][i]);
                             cnat4_correct = cnat4_correct + 1;
-                            cnat4_correct_sum = cnat4_correct_sum + resulttimeread[cnatlocationbig][i];
+                            cnat4_correct_sum = cnat4_correct_sum + resulttimeread[cnatlocationbig][i] - delaycnat[cnatlocationbig][i];
                         }
                     }//輸出到txt  同時記錄 cnat4_delay 數量
                     if (cnat4_correct == 0)//防BUG
@@ -1007,7 +1007,7 @@ namespace CNAMT_sim
                         {
                             forsd1[cnatlocationbig][cnat5_sd_count] = resulttimeread[cnatlocationbig][i];//把成功的放入forsd裡面供之後計算
                             cnat5_sd_count = cnat5_sd_count + 1; //記述++
-                            cnat5_sd_sum = cnat5_sd_sum + resulttimeread[cnatlocationbig][i];//算平均值用++
+                            cnat5_sd_sum = cnat5_sd_sum + resulttimeread[cnatlocationbig][i] - delaycnat[cnatlocationbig][i];//算平均值用++
                         }
                     }//計算SD用
 
@@ -1061,7 +1061,7 @@ namespace CNAMT_sim
                         {//正常
                             wText.WriteLine("第" + Convert.ToString(i + 1) + "題: " + resulttimeread[cnatlocationbig][i]);
                             cnat5_correct = cnat5_correct + 1;
-                            cnat5_correct_sum = cnat5_correct_sum + resulttimeread[cnatlocationbig][i];
+                            cnat5_correct_sum = cnat5_correct_sum + resulttimeread[cnatlocationbig][i] - delaycnat[cnatlocationbig][i];
                         }
                     }//輸出到txt  同時記錄 cnat5_delay 數量
                     if (cnat5_correct == 0)//防BUG
@@ -1109,7 +1109,7 @@ namespace CNAMT_sim
                         {
                             forsd1[cnatlocationbig][cnat6_sd_count] = resulttimeread[cnatlocationbig][i];//把成功的放入forsd裡面供之後計算
                             cnat6_sd_count = cnat6_sd_count + 1; //記述++
-                            cnat6_sd_sum = cnat6_sd_sum + resulttimeread[cnatlocationbig][i];//算平均值用++
+                            cnat6_sd_sum = cnat6_sd_sum + resulttimeread[cnatlocationbig][i] - delaycnat[cnatlocationbig][i];//算平均值用++
                         }
                     }//計算SD用
 
@@ -1163,7 +1163,7 @@ namespace CNAMT_sim
                         {//正常
                             wText.WriteLine("第" + Convert.ToString(i + 1) + "題: " + resulttimeread[cnatlocationbig][i]);
                             cnat6_correct = cnat6_correct + 1;
-                            cnat6_correct_sum = cnat6_correct_sum + resulttimeread[cnatlocationbig][i];
+                            cnat6_correct_sum = cnat6_correct_sum + resulttimeread[cnatlocationbig][i] - delaycnat[cnatlocationbig][i];
                         }
                     }//輸出到txt  同時記錄 cnat6_delay 數量
                     if (cnat6_correct == 0)//防BUG
@@ -1213,7 +1213,7 @@ namespace CNAMT_sim
                         {
                             forsd1[cnatlocationbig][cnat7_sd_count] = resulttimeread[cnatlocationbig][i];//把成功的放入forsd裡面供之後計算
                             cnat7_sd_count = cnat7_sd_count + 1; //記述++
-                            cnat7_sd_sum = cnat7_sd_sum + resulttimeread[cnatlocationbig][i];//算平均值用++
+                            cnat7_sd_sum = cnat7_sd_sum + resulttimeread[cnatlocationbig][i] - delaycnat[cnatlocationbig][i];//算平均值用++
                         }
                     }//計算SD用
 
@@ -1272,7 +1272,7 @@ namespace CNAMT_sim
                         {//正常
                             wText.WriteLine("第" + Convert.ToString(i + 1) + "題: " + resulttimeread[cnatlocationbig][i] +"   "+ leftright[i]);
                             cnat7_correct = cnat7_correct + 1;
-                            cnat7_correct_sum = cnat7_correct_sum + resulttimeread[cnatlocationbig][i];
+                            cnat7_correct_sum = cnat7_correct_sum + resulttimeread[cnatlocationbig][i] - delaycnat[cnatlocationbig][i];
                         }
                     }//輸出到txt  同時記錄 cnat7_delay 數量
                     if (cnat7_correct == 0)//防BUG
@@ -1320,7 +1320,7 @@ namespace CNAMT_sim
                         {
                             forsd1[cnatlocationbig][cnat8_sd_count] = resulttimeread[cnatlocationbig][i];//把成功的放入forsd裡面供之後計算
                             cnat8_sd_count = cnat8_sd_count + 1; //記述++
-                            cnat8_sd_sum = cnat8_sd_sum + resulttimeread[cnatlocationbig][i];//算平均值用++
+                            cnat8_sd_sum = cnat8_sd_sum + resulttimeread[cnatlocationbig][i] - delaycnat[cnatlocationbig][i];//算平均值用++
                         }
                     }//計算SD用
 
@@ -1374,7 +1374,7 @@ namespace CNAMT_sim
                         {//正常
                             wText.WriteLine("第" + Convert.ToString(i + 1) + "題: " + resulttimeread[cnatlocationbig][i]);
                             cnat8_correct = cnat8_correct + 1;
-                            cnat8_correct_sum = cnat8_correct_sum + resulttimeread[cnatlocationbig][i];
+                            cnat8_correct_sum = cnat8_correct_sum + resulttimeread[cnatlocationbig][i] - delaycnat[cnatlocationbig][i];
                         }
                     }//輸出到txt  同時記錄 cnat8_delay 數量
                     if (cnat8_correct == 0)//防BUG
@@ -1419,7 +1419,7 @@ namespace CNAMT_sim
                         {
                             forsd1[cnatlocationbig][cnat9_sd_count] = resulttimeread[cnatlocationbig][i];//把成功的放入forsd裡面供之後計算
                             cnat9_sd_count = cnat9_sd_count + 1; //記述++
-                            cnat9_sd_sum = cnat9_sd_sum + resulttimeread[cnatlocationbig][i];//算平均值用++
+                            cnat9_sd_sum = cnat9_sd_sum + resulttimeread[cnatlocationbig][i] - delaycnat[cnatlocationbig][i];//算平均值用++
                         }
                     }//計算SD用
 
@@ -1473,7 +1473,7 @@ namespace CNAMT_sim
                         {//正常
                             wText.WriteLine("第" + Convert.ToString(i + 1) + "題: " + resulttimeread[cnatlocationbig][i]);
                             cnat9_correct = cnat9_correct + 1;
-                            cnat9_correct_sum = cnat9_correct_sum + resulttimeread[cnatlocationbig][i];
+                            cnat9_correct_sum = cnat9_correct_sum + resulttimeread[cnatlocationbig][i] - delaycnat[cnatlocationbig][i];
                         }
                     }//輸出到txt  同時記錄 cnat9_delay 數量
                     if (cnat9_correct == 0)//防BUG
